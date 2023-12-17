@@ -50,14 +50,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 //LazyVerticalGrid with only 2-COL fixed!
 @Composable
 fun CourseGrid(modifier: Modifier = Modifier) {
@@ -94,7 +86,7 @@ fun CourseCard(topic: Topic, modifier: Modifier = Modifier) {
                     painter = painterResource(id = topic.imageRes),
                     contentDescription = null,
                     modifier = modifier
-                        .size(width = 8.dp, height = 68.dp)
+                        .size(width = 68.dp, height = 68.dp)
                         .aspectRatio(1f),
                     contentScale = ContentScale.Crop
                 )
